@@ -622,6 +622,7 @@ img.aos-init.aos-animate:hover {
         padding-inline: 1rem;
         display: flex;
         flex-direction: column;
+        height: auto;
     }
     .piedepagina p {
         font-size: 1.3rem;
