@@ -485,7 +485,7 @@ img.aos-init.aos-animate:hover {
     }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:425px){
     /* HEADER */
     header{
         display: flex;
