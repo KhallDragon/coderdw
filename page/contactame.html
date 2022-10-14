@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Aubain</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>     
+        <div class="logo">            
+            <h1 class="logo__header">Pablo Aubain</h1>
+        </div>    
+        <nav>
+            <ul class="lista">
+                <li class="lista__menu"><a href="../index.html">INICIO</a></li>
+                <li class="lista__menu"><a  href="./shows.html">SHOWS</a></li>
+                <li class="lista__menu"><a  href="./discografia.html"">DISCOGRAFIA</a></li>
+                <li class=lista__menu><a href="./multimedia.html">MULTIMEDIA</a></li>
+                <li class="lista__menu  lista__menu--actual"><a  href="#">CONTACTAME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto"> 
+            <div class="contacto__mapa">
+                <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.112459262098!2d-58.43538838468798!3d-34.601317664878344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca71ebcbc8eb%3A0x46b0dc7c83b48125!2sTte.%20Gral.%20Eustoquio%20Fr%C3%ADas%20434%2C%20C1414DVJ%20CABA!5e0!3m2!1ses-419!2sar!4v1663785753440!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+            </div> 
+            <div class="contacto__formulario">
+                <div class="contacto__titulo">
+                    <h3>CONTACTATE CONMIGO</h3>
+                    <p>Nombre y Apellido: </p>
+                </div class="contacto__botones">
+                <div>
+                <input type="text" name="nombre" placeholder="Escribi tu nombre">
+                <p>Email: </p>
+                <input type="email" name="email" placeholder="Escribi tu email">
+                <p>Telefono: </p>
+                <input type="tel" name="telefono" placeholder="Escribi tu nro telefonico">
+                <p>Consulta: </p>
+                </div>
+                <textarea class="contacto__cuadro" name="consulta" id="consulta" cols="30" rows="10" wrap="hard" placeholder="Escribi tu consulta"></textarea>
+                <input type="button" name="enviar" id="enviar" value="Enviar">
+            </div>
+        </section>
+    </main>
+    <footer >
+        <div class="piedepagina">
+            <p>SUSCRIBITE AL NEWSLETTER</p>
+            <input type="email" name="completar email"  placeholder=    "Escribi el mail">
+            <input type="button" name="enviar email" value="ENVIAR">
+        </div>        
+        <div class="piedepagina">
+            <p>SEGUINOS EN LAS REDES</p>
+            <a href="https://www.instagram.com/pablo_aubain_musica/">
+                <img class="piedepagina__redes"src="../img/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/pablo.aubain">
+                <img src="../img/facebook.png" alt="facebook" class="piedepagina__redes"></a>
+            <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng">
+                <img src="../img/spotify.png" alt="spotify"class="piedepagina__redes"></a>
+            <a  href="https://www.youtube.com/c/PabloAubain">
+                <img src="../img/youtube.png" alt="youtube" class="piedepagina__redes"></a>
+        </div>           
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

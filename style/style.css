@@ -1,0 +1,634 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+
+/* GENERAL */
+header{
+    height: 10vh;
+    padding-inline: 4rem;
+    padding-top: 1rem;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+footer{
+    padding-block: 1.5rem;
+    padding-inline: 4rem;
+    background-color: #d6d6d6;    
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    align-items: center;
+}
+
+.logo__header{    
+    font-size: 3rem;
+    font-family: 'Nabla', cursive;
+}
+
+/* HEADER*/
+/* MENU */
+.lista__menu{
+    padding: 0 2rem;
+    margin: 0.2rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.lista__menu--actual{
+    background-color: #D6D6D6;
+    border-radius: 1rem;
+}
+
+.lista__menu a{
+    text-decoration: none;
+    color: #ffee32;    
+}
+.lista__menu a:hover {
+    color: red;    
+}
+/* FIN MENU */
+/* FIN HEADER*/
+
+/* INDEX */
+/* PPRINCIPAL */
+.principal {
+    height: 90vh;
+    display: grid;
+    padding-inline: 4rem;
+    background-color: #202020;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: 9fr 1fr;
+    grid-template-areas: "foto redes"
+                        "foto scroll";
+    overflow: hidden;
+}
+
+.principal__portada {    
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    grid-area: foto;
+}
+
+.principal__foto{
+    display: inline-block;
+    height: 85%;
+}
+
+.principal__redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    grid-area: redes;
+}
+.principal__redes__logo {
+    width: 40px;
+    transition: transform 0.5s;
+}
+
+.principal__scroll {
+    display: flex;
+    grid-area: scroll;
+    align-items: end;
+    justify-content: end;
+    color: #d6d6d6;
+}
+/* FIN PRINCIPAL */
+
+/* INDEX DISCOGRAFIA */
+.discografia {
+    display: grid;
+    padding-inline: 4rem;
+    background-color: #d6d6d6;
+    grid-template-rows: 1fr auto 1fr;    
+    overflow: hidden;
+}
+.discografia__titulo {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.discografia__titulo h3{
+    color: #ffee32;
+    font-size: 3rem;
+}
+.discografia__titulo h2{
+    padding-top: 0.8rem;
+    color: #333533;
+}
+.discografia__seccion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.discografia__temas {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+.discografia__tapa {
+    width: 20vw;
+    border-radius: 13rem;
+    transition: transform 0.5s;
+}
+
+.discografia__nombre {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    color: #333533;
+}
+
+.discografia__mas {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.discografia__click {
+    background-color: #333533;
+    border-radius: 1rem;
+    color: #D6D6D7;
+    padding-inline: 1rem;
+    transition: transform 0.5s;
+}
+
+/* FIN INDEX DISCOGRAFIA */
+
+/* INDEX SHOWS */
+.shows{
+    padding-inline: 4rem;
+    background-color: #202020;   
+    overflow: hidden;  
+}
+
+.shows__titulo {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shows__titulo h3{
+    color: #ffd100;
+    font-size: 3rem;
+}
+.shows__titulo h2{
+    padding-top: 0.8rem;
+    color: #ffd100;
+}
+.shows__todo {
+    display: flex;
+    justify-content: space-evenly;
+    color: #d6d6d7;
+    padding-top: 3rem;
+}
+.shows__proximos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "fecha lugar"
+                        "nada ticket";
+}
+.shows__dia {
+    font-size: 5rem;
+}
+.shows__mes {
+    font-size: 2rem;
+}
+.shows__horario {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.shows__ticket {
+    color: #d6d6d6;
+    grid-area: ticket;
+}
+.shows__boton {
+    text-align: end;
+    color: #ffd100;
+}
+/* FIN INDEX SHOWS */
+
+/* FIN INDEX */
+
+/* FOOTER */
+
+.piedepagina__redes {
+    width: 30px;
+}
+/* FIN FOOTER */
+
+/* SHOWS */
+.titulo{
+    display: flex;
+    height: 20vh;
+    background-color: #202020;
+    color: #d6d6d7;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+}
+.titulo h2{    
+    font-size: 3rem;
+}
+.titulo h3{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.eventos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #202020;
+    color:#d6d6d7;
+    padding: 3rem;
+    height: 55vh;
+    align-items: center;
+}
+.eventos__todos {
+    display: flex;
+    flex-direction: column;
+}
+.eventos__fechas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    color:#ffd100;
+}
+.eventos__circle {
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+    grid-template-areas: "area1 circulo area2";
+    align-items: center;
+}
+.eventos__horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    color:#ffd100;
+}
+.eventos__dia {
+    font-size: 4rem;
+}
+.eventos__mes {
+    font-size: 2rem;
+}
+.eventos__liena1{
+    grid-area: area1;
+}
+.eventos__liena2{
+    grid-area: area2;
+}
+.eventos__circle img{
+    width: 40px;
+    grid-area: circulo;
+    border-radius: 13rem;
+    background-color: #202020;
+    transition: transform 0.2s;
+}
+
+
+/* FIN SHOWS */
+
+/* DISCOGRAFIA */
+.videoclip {
+    height: 90vh;    
+    overflow: hidden; 
+}
+.videoclip__yt {
+    width: 100vw;
+    height: 90vh;   
+}
+
+.tema1 {
+    background-color: #202020;
+    color: #d6d6d7;
+    padding: 4rem;
+    text-align: center;
+    margin: 0;
+    max-width: 100vw
+}
+.tema2 {
+    background-color: #d6d6d7;
+    color: #202020;
+    padding: 4rem;
+    text-align: center;
+    margin: 0;
+    max-width: 100vw
+}
+.tema1__historia {
+    padding-inline: 2rem;
+}
+iframe {
+    width: 50vw;
+}
+.tema1__scroll {
+    background-color: #202020;
+}
+/* FIN DISCOGRAFIA */
+
+/* MULTIMEDIA */
+.multimedia{
+    padding-inline: 4rem;
+    background-color: #202020;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: dense;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+
+.multimedia div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.multimedia__horizontal{
+    grid-column: span 2;
+}
+
+.multimedia__vertical{
+    grid-row: span 2;
+}
+
+.multimedia__grande{
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+
+/* FIN MULTIMEDIA */
+
+/* CONTACTAME */
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    background-color: #202020;
+    color: #ffee32;
+}
+.contacto__mapa {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.contacto__cuadro {
+    min-width: 400px;
+    min-height:400px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/* FIN CONTACTAME */
+
+
+/* HOVER */
+
+/* HEADER */
+.lista__menu:hover{
+    transform: scale(1.2);
+}
+/* PORTADA */
+.principal__redes__logo:hover {
+    transform: scale(1.2);
+}
+/* INDEX DISCOGRAFIA */
+.discografia__tapa:hover {
+    transform: scale(1.1);
+}
+.discografia__click:hover {
+    color: red;
+    transform: scale(1.1);
+}
+/* INDEX SHOWS */
+.shows__boton:hover {
+    color: red;
+}
+
+/* SHOWS */
+.eventos__circle img:hover {
+    background-color: #d6d6d7;
+    transform: scale(1.2);
+}
+/* MULTIMEDIA */
+img.aos-init.aos-animate:hover {
+    transform: scale(1.1);
+}
+/* FIN HOVER */
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1024px){
+    /* HEADER */
+    .logo__header {
+        font-size: 2.5rem;
+    }
+    .lista__menu {
+        padding: 0 0.3rem;
+        font-size: 1.1rem;
+    }
+
+} 
+
+@media screen and (max-width:768px){
+    /* HEADER */
+    header {
+        padding-inline: 1.1rem;
+    }
+    .logo__header {
+        font-size: 2rem;
+    }
+    ol, ul {
+        padding-left: 0;
+    }
+    /* PRINCIPAL */
+    .principal__scroll {
+        font-size: 0.7rem;
+    }
+    .principal__scroll__p{
+        margin-bottom: 0;
+    }
+     /*EVENTOS  */
+     .eventos__horario{
+        text-align: center;
+     }
+     /* MULTIMEDIA */
+     .multimedia {
+        padding: 1.1rem
+    }
+
+     /* CONTACTO */
+     .contacto__cuadro {
+        min-width: 300px;
+        min-height: 300px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width:320px){
+    /* HEADER */
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
+        align-items: inherit;
+        height: auto;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .logo__header {
+        font-size: 2.5rem;
+    }
+    .lista {
+        display: flex;
+        flex-direction: column;
+    }
+    .lista__menu {
+        padding-right: 0;
+        padding-left: 0;
+        border-bottom: 1px solid #d6d6d7;
+        border-radius: 0rem;
+    }
+    .lista__menu--actual {
+        background-color: #202020;
+    }
+    ol, ul {
+        padding-left: 0;
+    }
+    /* FIN HEADER */
+
+    /* PRINCIPAL */
+    .principal{
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .principal__foto {
+        width: 85vw;
+        max-width: 300px;
+    }
+    .principal__redes {
+        flex-direction: row;
+    }
+    .principal_scroll {
+        justify-content: center;
+    }
+    /* FIN PRINCIPAL */
+
+    /* INDEX DISCOGRAFIA */
+    .discografia{
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .videoclip{
+        height: auto;
+    }
+    .videoclip__yt {
+        width: 100vw;
+        height: auto;
+    }
+    .discografia__seccion{
+        display: flex;
+        flex-direction: column;
+    }
+    .discografia__titulo h3 {
+        font-size: 2.2rem;
+    }
+    .discografia__titulo h2 {
+        font-size: 1.2rem;
+    }
+    .discografia__temas {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .discografia__tapa {
+        width: 85vw;
+        max-width: 300px;
+    }
+    .discografia__nombre {
+        font-size: 1.4rem;
+    }
+    .discografia__mas {
+        padding-bottom: 1rem;
+    }
+    /* FIN INDEX DISCOGRAFIA */
+    
+    /* INDEX SHOWS */
+    .shows{
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .shows__todo{
+        display: flex;
+        flex-direction: column;
+    }
+    .shows__titulo h3 {
+        font-size: 2.2rem;
+    }
+    .shows__titulo h2 {
+        font-size: 1.2rem;
+    }
+    /* FIN INDEX SHOWS */
+    /* MULTIMEDIA  */
+    .multimedia {
+        padding: 1rem
+    }
+
+    /* CONTACTO */
+    .contacto {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-inline: 1rem;
+    }
+    .contacto__formulario{
+        padding-inline: 1rem;
+    }
+    .contacto__mapa {
+        width: 250px;
+    }
+    .contacto__cuadro {
+        max-width: 250px;
+        min-width: 250px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    /* FOOTER */
+    footer{
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .piedepagina p {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* FIN RESPONSIVE */

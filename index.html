@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Aubain</title>    
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>     
+        <div class="logo">            
+            <h1 class="logo__header" data-aos="fade-right" data-aos-duration="1000">Pablo Aubain</h1>
+        </div>   
+        <nav>
+            <ul class="lista">
+                <li class="lista__menu lista__menu--actual"><a href="#">INICIO</a></li>
+                <li class="lista__menu"><a  href="./page/shows.html">SHOWS</a></li>
+                <li class="lista__menu"><a  href="./page/discografia.html">DISCOGRAFIA</a></li>
+                <li class=lista__menu><a href="./page/multimedia.html">MULTIMEDIA</a></li>
+                <li class="lista__menu"><a  href="./page/contactame.html">CONTACTAME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="principal">
+            <div class="principal__portada">
+                <img src="./img/cara.png" alt="" class="principal__foto">
+            </div>
+            <div class="principal__redes" data-aos="fade-left" data-aos-duration="1000">
+                <a href="https://www.instagram.com/pablo_aubain_musica/">
+                    <img class="principal__redes__logo"src="./img/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/pablo.aubain">
+                    <img class="principal__redes__logo" src="./img/facebook.png" alt="facebook"></a>
+                <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng">
+                    <img class="principal__redes__logo" src="./img/spotify.png" alt="spotify"></a>
+                <a  href="https://www.youtube.com/c/PabloAubain">
+                    <img class="principal__redes__logo" src="./img/youtube.png" alt="youtube"></a>
+            </div>
+            <div class="principal__scroll">
+                <p class="principal__scroll__p">▼ Scroll ▼</p>
+            </div>
+        </section>
+        <section class="discografia">
+            <div class="discografia__titulo" data-aos="zoom-out" data-aos-duration="500">
+                <h3>DISCOGRAFIA</h3>
+                <h2>Ultimas Canciones</h2>
+            </div>
+            <article class="discografia__seccion">
+                <div class="discografia__temas" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="./page/discografia.html">
+                        <img class="discografia__tapa" src="./img/tema1.png" alt="primera cancion">
+                    </a>
+                    <p class="discografia__nombre">MORDER ANZUELOS</p>
+                </div>           
+                <div class="discografia__temas" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">               
+                    <a href="./page/discografia.html">
+                        <img class="discografia__tapa" src="./img/tema2.png" alt="segunda cancion">
+                    </a>
+                    <p class="discografia__nombre">AL FIN SUCEDE</p>
+                </div>            
+                <div class="discografia__temas" alt="tercera cancion" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="./page/discografia.html">
+                        <img class="discografia__tapa" src="./img/tema3.png" >
+                    </a>
+                    <p class="discografia__nombre">CURVAS</p>
+                </div>
+            </article>            
+            <div class="discografia__mas">
+                <a href="./page/discografia.html"><p class="discografia__click">Escuchar mas canciones<p></a>
+            </div>
+        </section>
+        <section class="shows">
+            <div class="shows__titulo" data-aos="zoom-out" data-aos-duration="500">
+                <h3>SHOWS</h3>
+                <h2>Proximas Fechas</h2>
+            </div>
+            <article class="shows__todo">
+                <div class="shows__proximos" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="shows__fechas" >
+                        <h2 class="shows__dia">22</h2>
+                        <h4 class="shows__mes">NOV</h4>
+                        <p class="shows__anio">2022</p>
+                    </div>
+                    <div class="shows__horario">
+                        <p>Luna Park</p>
+                        <p>C.A.B.A., Buenos Aires</p>
+                        <p>22:30 HS.<p>
+                    </div>
+                    <div class="shows__ticket">
+                        <hr>
+                        <a href="./page/shows.html"><p class="shows__boton">ADQUIRIR TICKET</p></a>
+                    </div>
+                </div>
+                <div class="shows__proximos" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="shows__fechas">
+                        <h2 class="shows__dia">16</h2>
+                        <h4 class="shows__mes">DIC</h4>
+                        <p class="shows__anio">2022</p>
+                    </div>
+                    <div class="shows__horario">
+                        <p>Anfiteatro</p>
+                        <p>Martinez, Buenos Aires</p>
+                        <p>20:00 HS.<p>
+                    </div>
+                    <div class="shows__ticket">
+                        <hr>
+                        <a href="./page/shows.html"><p class="shows__boton">ADQUIRIR TICKET</p></a>
+                    </div>
+                </div>
+                <div class="shows__proximos" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="shows__fechas">
+                        <h2 class="shows__dia">07</h2>
+                        <h4 class="shows__mes">FEB</h4>
+                        <p class="shows__anio">2023</p>
+                    </div>
+                    <div class="shows__horario">
+                        <p>Movistar Arena</p>
+                        <p>C.A.B.A., Buenos Aires</p>
+                        <p>23:00 HS.<p>
+                    </div>
+                    <div class="shows__ticket">
+                        <hr>
+                        <a href="./page/shows.html"><p class="shows__boton">ADQUIRIR TICKET</p></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer >
+        <div class="piedepagina">
+            <p>SUSCRIBITE AL NEWSLETTER</p>
+            <input type="email" name="completar email"  placeholder=    "Escribi el mail">
+            <input type="button" name="enviar email" value="ENVIAR">
+
+        </div>        
+        <div class="piedepagina">
+            <p>SEGUINOS EN LAS REDES</p>
+            <a href="https://www.instagram.com/pablo_aubain_musica/">
+                <img class="piedepagina__redes"src="./img/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/pablo.aubain">
+                <img src="./img/facebook.png" alt="facebook" class="piedepagina__redes"></a>
+            <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng">
+                <img src="./img/spotify.png" alt="spotify"class="piedepagina__redes"></a>
+            <a  href="https://www.youtube.com/c/PabloAubain">
+                <img src="./img/youtube.png" alt="youtube" class="piedepagina__redes"></a>
+        </div>                
+    </footer>  
+    <script>
+        AOS.init();
+    </script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
