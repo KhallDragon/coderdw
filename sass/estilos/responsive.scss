@@ -1,0 +1,194 @@
+@import "./variables.scss";
+
+@media screen and (max-width:1024px){
+    /* HEADER */
+    header{
+        padding-inline: 1.5rem;
+    }
+    .logo__header {
+        font-size: 2.5rem;
+    }
+    .menu__opcion{
+        margin-inline: 1rem;
+    }    
+}
+
+@media screen and (max-width:768px){
+    /* HEADER */
+    header {
+        padding-inline: 1.1rem;
+    }
+    .logo__header {
+        font-size: 2rem;
+    }
+    .menu__opcion{
+        margin-inline: 0;
+    }    
+    ol, ul {
+        padding-left: 0;
+    }
+    /* PRINCIPAL */
+    .principal__scroll {
+        font-size: 0.7rem;
+        &__p{
+            margin-bottom: 0;
+        }
+    }
+    /*EVENTOS  */
+    .eventos__horario{
+        text-align: center;
+     }
+     /* MULTIMEDIA */
+     .multimedia {
+        padding: 1.1rem
+    }
+
+     /* CONTACTO */
+     .contacto__cuadro {
+        min-width: 300px;
+        min-height: 300px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width:425px){
+    /* HEADER */
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+        height: auto;
+        background-color: $color3;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+    .menu{
+        &__opcion{
+            margin-inline: 0;
+            text-align: end;
+            color: $color1;
+            &--active{
+                color: $color2;
+            }
+        }
+    }
+    /* FIN HEADER */
+
+    /* PRINCIPAL */
+    .principal{
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        &__foto {
+            width: 85vw;
+            max-width: 300px;
+        }
+        &__redes {
+            flex-direction: row;
+        }
+        &_scroll {
+            justify-content: center;
+        }
+    }
+    /* FIN PRINCIPAL */
+
+    /* INDEX DISCOGRAFIA */
+    .discografia{
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+        &__seccion{
+            display: flex;
+            flex-direction: column;
+        }
+        &__titulo h3 {
+            font-size: 2.2rem;
+        }
+        &__titulo h2 {
+            font-size: 1.2rem;
+        }
+        &__temas {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        &__tapa {
+            width: 85vw;
+            max-width: 300px;
+        }
+        &__nombre {
+            font-size: 1.4rem;
+        }
+        &__mas {
+            padding-bottom: 1rem;
+        }
+    }
+    .videoclip{
+        height: auto;
+        &__yt {
+            width: 100vw;
+            height: auto;
+        }
+    }
+
+        /* FIN INDEX DISCOGRAFIA */
+    
+    /* INDEX SHOWS */
+    .shows{
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+        &__todo{
+            display: flex;
+            flex-direction: column;
+        }
+        &__titulo h3 {
+            font-size: 2.2rem;
+        }
+        &__titulo h2 {
+            font-size: 1.2rem;
+        }
+    }
+    /* FIN INDEX SHOWS */
+    /* MULTIMEDIA  */
+    .multimedia {
+        padding: 1rem
+    }
+
+    /* CONTACTO */
+    .contacto {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-inline: 1rem;
+        &__formulario{
+            padding-inline: 1rem;
+        }
+        &__mapa {
+            width: 250px;
+        }
+        &__cuadro {
+            max-width: 250px;
+            min-width: 250px;
+            min-height: 200px;
+            max-height: 200px;
+        }
+    }
+    /* FOOTER */
+    footer{
+        padding-inline: 1rem;
+    }
+    .piedepagina{
+        p{
+            text-align: center;
+        }
+    }
+    .redes{
+        width: 50px;
+    }
+    
+}
+    

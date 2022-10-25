@@ -1,0 +1,22 @@
+{
+  "name": "coder",
+  "version": "1.0.0",
+  "description": "paquete de sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/style.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhallDragon/coderdw.git"
+  },
+  "author": "Fernando Martini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhallDragon/coderdw/issues"
+  },
+  "homepage": "https://github.com/KhallDragon/coderdw#readme"
+}

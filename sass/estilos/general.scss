@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+header {
+    padding-inline: 4rem;
+    padding-top: 1rem;
+    background-color: $color1;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+footer{
+    padding-block: 1.5rem;
+    padding-inline: 4rem;
+    background-color: $color3;
+}
+
+.logo__header{    
+    font-size: 3rem;
+    font-family: 'Nabla', cursive;
+}

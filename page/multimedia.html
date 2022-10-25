@@ -12,22 +12,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
 </head>
 <body>
-    <header>     
-        <div class="logo">            
-            <h1 class="logo__header">Pablo Aubain</h1>
-        </div>    
-        <nav>
-            <ul class="lista">
-                <li class="lista__menu"><a href="../index.html">INICIO</a></li>
-                <li class="lista__menu"><a  href="./shows.html">SHOWS</a></li>
-                <li class="lista__menu"><a  href="./discografia.html"">DISCOGRAFIA</a></li>
-                <li class="lista__menu  lista__menu--actual"><a href="#">MULTIMEDIA</a></li>
-                <li class="lista__menu"><a  href="./contactame.html">CONTACTAME</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <div class="logo">            
+                    <h1 class="logo__header display-5">Pablo Aubain</h1>
+                </div>   
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="menu navbar-nav">
+                        <a class="menu__opcion nav-link" href="../index.html">INICIO</a>
+                        <a class="menu__opcion nav-link" href="./shows.html">SHOWS</a>
+                        <a class="menu__opcion nav-link" href="./discografia.html">DISCOGRAFIA</a>
+                        <a class="menu__opcion menu__opcion--active nav-link  btn btn-secondary" aria-current="page" href="#">MULTIMEDIA</a>
+                        <a class="menu__opcion nav-link" href="./contactame.html">CONTACTAME</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -122,26 +129,37 @@
             </div>
         </section>
     </main>
-    <footer >
-        <div class="piedepagina">
-            <p>SUSCRIBITE AL NEWSLETTER</p>
-            <input type="email" name="completar email"  placeholder=    "Escribi el mail">
-            <input type="button" name="enviar email" value="ENVIAR">
-        </div>        
-        <div class="piedepagina">
-            <p>SEGUINOS EN LAS REDES</p>
-            <a href="https://www.instagram.com/pablo_aubain_musica/">
-                <img class="piedepagina__redes"src="../img/instagram.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/pablo.aubain">
-                <img src="../img/facebook.png" alt="facebook" class="piedepagina__redes"></a>
-            <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng">
-                <img src="../img/spotify.png" alt="spotify"class="piedepagina__redes"></a>
-            <a  href="https://www.youtube.com/c/PabloAubain">
-                <img src="../img/youtube.png" alt="youtube" class="piedepagina__redes"></a>
-        </div>      
+    <footer>
+        <div class="piedepagina rounded-pill" data-aos="fade-up">
+            <p class="display-6 d-flex justify-content-center text-center">SEGUIME EN LAS REDES</p>    
+            <div class="piedepagina__redes d-flex justify-content-center">            
+                <div class="p-md-3">
+                    <a href="https://www.instagram.com/pablo_aubain_musica/" target="_blank">
+                        <img class="redes"src="../img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="p-md-3">
+                    <a href="https://www.facebook.com/pablo.aubain" target="_blank">
+                        <img class="redes" src="../img/facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="p-md-3">
+                    <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng" target="_blank">
+                        <img class="redes" src="../img/spotify.png" alt="spotify">
+                    </a>
+                </div>
+                <div class="p-md-3 ">
+                    <a  href="https://www.youtube.com/c/PabloAubain" target="_blank">
+                        <img class="redes img-fluid" src="../img/youtube.png" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>                
     </footer>
     <script>
         AOS.init();
+    </script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+@import "./variables.scss";
+
+.videoclip {
+    height: 90vh;    
+    overflow: hidden; 
+    &__yt {
+        width: 100vw;
+        height: 90vh;   
+    }
+}
+.tema1 {
+    background-color: $color1;
+    color: $color3;
+    padding: 4rem;
+    text-align: center;
+    margin: 0;
+    &__historia {
+        padding-inline: 2rem;
+    }
+    &__scroll {
+        background-color: $color1;
+    }
+}
+.tema2 {
+    background-color: $color3;
+    color: $color1;
+    padding: 4rem;
+    text-align: center;
+    margin: 0;
+    max-width: 100vw
+}
+iframe {
+    width: 50vw;
+}

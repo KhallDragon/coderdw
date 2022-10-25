@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+.menu__opcion{
+    color: $color2;
+    margin-inline: 2rem;
+    &:hover{
+        color: red;
+    }
+    &--active{
+        background-color: $color3;
+        color: $color1;
+        border-radius: 10rem;
+    }
+}

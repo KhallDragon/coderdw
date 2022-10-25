@@ -1,0 +1,20 @@
+@import "./variables.scss";
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    background-color: $color1;
+    color: $color2;
+    &__mapa {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    &_cuadro {
+        min-width: 400px;
+        min-height:400px;
+        max-width: 400px;
+        max-height: 400px;
+    }
+}

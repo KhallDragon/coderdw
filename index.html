@@ -12,145 +12,204 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>     
-        <div class="logo">            
-            <h1 class="logo__header" data-aos="fade-right" data-aos-duration="1000">Pablo Aubain</h1>
-        </div>   
-        <nav>
-            <ul class="lista">
-                <li class="lista__menu lista__menu--actual"><a href="#">INICIO</a></li>
-                <li class="lista__menu"><a  href="./page/shows.html">SHOWS</a></li>
-                <li class="lista__menu"><a  href="./page/discografia.html">DISCOGRAFIA</a></li>
-                <li class=lista__menu><a href="./page/multimedia.html">MULTIMEDIA</a></li>
-                <li class="lista__menu"><a  href="./page/contactame.html">CONTACTAME</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top overflow-hidden">
+            <div class="container-fluid">
+                <div class="logo">            
+                    <h1 class="logo__header display-5" data-aos="fade-right" data-aos-duration="1000">Pablo Aubain</h1>
+                </div>   
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="menu navbar-nav">
+                        <a class="menu__opcion menu__opcion--active nav-link btn btn-secondary" aria-current="page" href="#">INICIO</a>
+                        <a class="menu__opcion nav-link" href="./page/shows.html">SHOWS</a>
+                        <a class="menu__opcion nav-link" href="./page/discografia.html">DISCOGRAFIA</a>
+                        <a class="menu__opcion nav-link" href="./page/multimedia.html">MULTIMEDIA</a>
+                        <a class="menu__opcion nav-link" href="./page/contactame.html">CONTACTAME</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="principal">
-            <div class="principal__portada">
-                <img src="./img/cara.png" alt="" class="principal__foto">
-            </div>
-            <div class="principal__redes" data-aos="fade-left" data-aos-duration="1000">
-                <a href="https://www.instagram.com/pablo_aubain_musica/">
-                    <img class="principal__redes__logo"src="./img/instagram.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/pablo.aubain">
-                    <img class="principal__redes__logo" src="./img/facebook.png" alt="facebook"></a>
-                <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng">
-                    <img class="principal__redes__logo" src="./img/spotify.png" alt="spotify"></a>
-                <a  href="https://www.youtube.com/c/PabloAubain">
-                    <img class="principal__redes__logo" src="./img/youtube.png" alt="youtube"></a>
-            </div>
-            <div class="principal__scroll">
-                <p class="principal__scroll__p">▼ Scroll ▼</p>
-            </div>
+        <section class="principal container-fluid overflow-hidden row">
+                <div class="principal__portada col-md-11 d-flex justify-content-center align-items-end">
+                    <img src="./img/cara.png" alt="" class="principal__foto">
+                </div>
+                <div class="col-md-1 d-flex flex-column align-items-center justify-content-center principal__redes" data-aos="fade-left" data-aos-duration="1000">
+                    <div>
+                        <a href="https://www.instagram.com/pablo_aubain_musica/" target="_blank">                    
+                            <img class="principal__redes__logo"src="./img/instagram.png" alt="instagram">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/pablo.aubain" target="_blank">
+                            <img class="principal__redes__logo" src="./img/facebook.png" alt="facebook">
+                        </a>
+                    </div>
+                    <div>
+                        <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng" target="_blank">
+                            <img class="principal__redes__logo" src="./img/spotify.png" alt="spotify">
+                        </a>
+                    </div>
+                    <div>
+                        <a  href="https://www.youtube.com/c/PabloAubain" target="_blank">
+                            <img class="principal__redes__logo" src="./img/youtube.png" alt="youtube">
+                        </a>
+                    </div>                
         </section>
-        <section class="discografia">
-            <div class="discografia__titulo" data-aos="zoom-out" data-aos-duration="500">
-                <h3>DISCOGRAFIA</h3>
-                <h2>Ultimas Canciones</h2>
+        <section class="discografia container-fluid overflow-hidden">
+            <div class="discografia__titulo d-flex flex-column align-items-center mt-4" data-aos="zoom-out" data-aos-duration="500">
+                <h3 class="text-nowrap">DISCOGRAFIA</h3>
+                <h2 class="display-5 text-nowrap">Ultimas Canciones</h2>
             </div>
-            <article class="discografia__seccion">
-                <div class="discografia__temas" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-                    <a href="./page/discografia.html">
-                        <img class="discografia__tapa" src="./img/tema1.png" alt="primera cancion">
-                    </a>
-                    <p class="discografia__nombre">MORDER ANZUELOS</p>
+            <article class="discografia__seccion row justify-content-center mt-5">
+                <div class="discografia__temas col-md d-flex flex-column align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <div>
+                        <a href="./page/discografia.html">
+                            <img class="shadow mb-5 rounded-circle discografia__tapa" src="./img/tema1.png" alt="primera cancion">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./page/discografia.html">
+                            <p class="discografia__nombre badge text-wrap">MORDER ANZUELOS</p>
+                        </a>
+                    </div>
                 </div>           
-                <div class="discografia__temas" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">               
-                    <a href="./page/discografia.html">
-                        <img class="discografia__tapa" src="./img/tema2.png" alt="segunda cancion">
-                    </a>
-                    <p class="discografia__nombre">AL FIN SUCEDE</p>
+                <div class="discografia__temas col-md d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">               
+                    <div>
+                        <a href="./page/discografia.html">
+                            <img class="shadow mb-5 rounded-circle discografia__tapa" src="./img/tema2.png" alt="segunda cancion">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./page/discografia.html">
+                            <p class="discografia__nombre badge text-wrap">AL FIN SUCEDE</p>
+                        </a>
+                    </div>
                 </div>            
-                <div class="discografia__temas" alt="tercera cancion" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                    <a href="./page/discografia.html">
-                        <img class="discografia__tapa" src="./img/tema3.png" >
-                    </a>
-                    <p class="discografia__nombre">CURVAS</p>
+                <div class="discografia__temas col-md d-flex flex-column align-items-center" alt="tercera cancion" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div>
+                        <a href="./page/discografia.html">
+                            <img class="shadow mb-5 rounded-circle discografia__tapa" src="./img/tema3.png" >
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./page/discografia.html">
+                            <p class="discografia__nombre badge text-wrap">CURVAS</p>
+                        </a>
+                    </div>
                 </div>
             </article>            
-            <div class="discografia__mas">
+            <div class="discografia__mas d-flex justify-content-center">
                 <a href="./page/discografia.html"><p class="discografia__click">Escuchar mas canciones<p></a>
             </div>
         </section>
-        <section class="shows">
-            <div class="shows__titulo" data-aos="zoom-out" data-aos-duration="500">
-                <h3>SHOWS</h3>
-                <h2>Proximas Fechas</h2>
+        <section class="shows container-fluid overflow-hidden">
+            <div class="shows__titulo d-flex flex-column align-items-center mt-4" data-aos="zoom-out" data-aos-duration="500">
+                <h3 class="text-nowrap">SHOWS</h3>
+                <h2 class="display-5 text-nowrap">Proximas Fechas</h2>
             </div>
-            <article class="shows__todo">
-                <div class="shows__proximos" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="shows__fechas" >
-                        <h2 class="shows__dia">22</h2>
-                        <h4 class="shows__mes">NOV</h4>
+            <article class="shows__todo row my-5 py-6">
+                <div class="shows__proximos col-md row justify-content-evenly" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="shows__fechas col-3 d-flex flex-column align-items-end" >
+                        <h2 class="shows__dia display-1">22</h2>
+                        <h4 class="shows__mes display-6">NOV</h4>
                         <p class="shows__anio">2022</p>
                     </div>
-                    <div class="shows__horario">
+                    <div class="shows__horario col-6">
                         <p>Luna Park</p>
                         <p>C.A.B.A., Buenos Aires</p>
                         <p>22:30 HS.<p>
                     </div>
-                    <div class="shows__ticket">
-                        <hr>
-                        <a href="./page/shows.html"><p class="shows__boton">ADQUIRIR TICKET</p></a>
+                    <div class="shows__ticket row justify-content-end">
+                        <div class="col-9">
+                            <hr>
+                            <div class="d-flex justify-content-end">
+                                <a href="./page/shows.html">
+                                    <p class="shows__boton">ADQUIRIR TICKET</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="shows__proximos" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="shows__fechas">
-                        <h2 class="shows__dia">16</h2>
-                        <h4 class="shows__mes">DIC</h4>
+                <div class="shows__proximos col-md row" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="shows__fechas col-3 d-flex flex-column align-items-end">
+                        <h2 class="shows__dia display-1">16</h2>
+                        <h4 class="shows__mes display-6">DIC</h4>
                         <p class="shows__anio">2022</p>
                     </div>
-                    <div class="shows__horario">
+                    <div class="shows__horario col-6">
                         <p>Anfiteatro</p>
                         <p>Martinez, Buenos Aires</p>
                         <p>20:00 HS.<p>
                     </div>
-                    <div class="shows__ticket">
-                        <hr>
-                        <a href="./page/shows.html"><p class="shows__boton">ADQUIRIR TICKET</p></a>
+                    <div class="shows__ticket row justify-content-end">
+                        <div class="col-9">
+                            <hr>
+                            <div class="d-flex justify-content-end">
+                                <a href="./page/shows.html">
+                                    <p class="shows__boton">ADQUIRIR TICKET</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="shows__proximos" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="shows__fechas">
-                        <h2 class="shows__dia">07</h2>
-                        <h4 class="shows__mes">FEB</h4>
+                <div class="shows__proximos col-md row" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="shows__fechas col-3 d-flex flex-column align-items-end">
+                        <h2 class="shows__dia display-1">07</h2>
+                        <h4 class="shows__mes display-6">FEB</h4>
                         <p class="shows__anio">2023</p>
                     </div>
-                    <div class="shows__horario">
+                    <div class="shows__horario col-6">
                         <p>Movistar Arena</p>
                         <p>C.A.B.A., Buenos Aires</p>
                         <p>23:00 HS.<p>
                     </div>
-                    <div class="shows__ticket">
-                        <hr>
-                        <a href="./page/shows.html"><p class="shows__boton">ADQUIRIR TICKET</p></a>
+                    <div class="shows__ticket row justify-content-end">
+                        <div class="col-9">
+                            <hr>
+                            <div class="d-flex justify-content-end">
+                                <a href="./page/shows.html">
+                                    <p class="shows__boton">ADQUIRIR TICKET</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
         </section>
     </main>
-    <footer >
-        <div class="piedepagina">
-            <p>SUSCRIBITE AL NEWSLETTER</p>
-            <input type="email" name="completar email"  placeholder=    "Escribi el mail">
-            <input type="button" name="enviar email" value="ENVIAR">
-
-        </div>        
-        <div class="piedepagina">
-            <p>SEGUINOS EN LAS REDES</p>
-            <a href="https://www.instagram.com/pablo_aubain_musica/">
-                <img class="piedepagina__redes"src="./img/instagram.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/pablo.aubain">
-                <img src="./img/facebook.png" alt="facebook" class="piedepagina__redes"></a>
-            <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng">
-                <img src="./img/spotify.png" alt="spotify"class="piedepagina__redes"></a>
-            <a  href="https://www.youtube.com/c/PabloAubain">
-                <img src="./img/youtube.png" alt="youtube" class="piedepagina__redes"></a>
+    <footer>
+        <div class="piedepagina rounded-pill" data-aos="fade-up">
+            <p class="display-6 d-flex justify-content-center text-center">SEGUIME EN LAS REDES</p>    
+            <div class="piedepagina__redes d-flex justify-content-center">            
+                <div class="p-md-3">
+                    <a href="https://www.instagram.com/pablo_aubain_musica/" target="_blank">
+                        <img class="redes"src="./img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="p-md-3">
+                    <a href="https://www.facebook.com/pablo.aubain" target="_blank">
+                        <img class="redes" src="./img/facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="p-md-3">
+                    <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng" target="_blank">
+                        <img class="redes" src="./img/spotify.png" alt="spotify">
+                    </a>
+                </div>
+                <div class="p-md-3 ">
+                    <a  href="https://www.youtube.com/c/PabloAubain" target="_blank">
+                        <img class="redes img-fluid" src="./img/youtube.png" alt="youtube">
+                    </a>
+                </div>
+            </div>
         </div>                
     </footer>  
     <script>
@@ -158,6 +217,5 @@
     </script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
-
 </body>
 </html>

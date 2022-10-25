@@ -12,119 +12,155 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/style.css">    
+    <link rel="stylesheet" href="../css/style.css">    
 </head>
 <body>
-    <header>     
-        <div class="logo">            
-            <h1 class="logo__header">Pablo Aubain</h1>
-        </div>     
-        <nav>
-            <ul class="lista">
-                <li class="lista__menu"><a href="../index.html">INICIO</a></li>
-                <li class="lista__menu  lista__menu--actual"><a  href="#">SHOWS</a></li>
-                <li class="lista__menu"><a  href="./discografia.html"">DISCOGRAFIA</a></li>
-                <li class=lista__menu><a href="./multimedia.html">MULTIMEDIA</a></li>
-                <li class="lista__menu"><a  href="./contactame.html">CONTACTAME</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <div class="logo">            
+                    <h1 class="logo__header display-5" >Pablo Aubain</h1>
+                </div>   
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="menu navbar-nav">
+                        <a class="menu__opcion nav-link" href="../index.html">INICIO</a>
+                        <a class="menu__opcion menu__opcion--active nav-link  btn btn-secondary" aria-current="page" href="#">SHOWS</a>
+                        <a class="menu__opcion nav-link" href="./discografia.html">DISCOGRAFIA</a>
+                        <a class="menu__opcion nav-link" href="./multimedia.html">MULTIMEDIA</a>
+                        <a class="menu__opcion nav-link" href="./contactame.html">CONTACTAME</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="titulo">
-            <h2 data-aos="fade-up" data-aos-duration="1000">COMPRA TU TICKET</h2>
-            <h3 data-aos="fade-up" data-aos-duration="1000">PARA LOS PROXIMOS SHOWS</h3>
-        </section>
-        <section class="eventos">
-            <div class="eventos__todos">
-                <div class="eventos__fechas">
-                    <h2 class="eventos__dia">22</h2>
-                    <h4 class="eventos__mes">NOV</h4>
-                    <p class="eventos__anio">2022</p>
-                </div>            
-                <div class="eventos__circle">
-                    <hr class="eventos__liena1">                    
-                    <a href="https://www.ticketek.com.ar/"><img src="../img/circulo.png" alt=""></a>
-                    <hr class="eventos__linea2">
-                </div>
-                <div class="eventos__horario">
-                    <p>Luna Park</p>
-                    <p>C.A.B.A., Buenos Aires</p>
-                    <p>22:30 HS.<p>
-                </div>
+        <section class="eventos  container-fluid">
+            <div class="eventos__titulos d-flex flex-column align-items-center pt-5">
+                <h2 class="display-3 text-nowrap"data-aos="fade-up" data-aos-duration="1000">COMPRA TU TICKET</h2>
+                <h3 class="display-6 text-nowrap"data-aos="fade-up" data-aos-duration="1000">PARA LOS PROXIMOS SHOWS</h3>
             </div>
-            <div class="eventos__todos">
-                <div class="eventos__fechas">
-                    <h2 class="eventos__dia">16</h2>
-                    <h4 class="eventos__mes">DIC</h4>
-                    <p class="eventos__anio">2022</p>
-                </div>            
-                <div class="eventos__circle">
-                    <hr class="eventos__liena1">                    
-                    <a href="https://www.ticketek.com.ar/"><img src="../img/circulo.png" alt=""></a>
-                    <hr class="eventos__linea2">                   
+            <article class="eventos__shows row  mt-5">
+                <div class="eventos__todos col-md-3 container-fluid">
+                    <div class="eventos__fechas d-flex flex-column align-items-center">
+                        <h2 class="eventos__dia">22</h2>
+                        <h4 class="eventos__mes">NOV</h4>
+                        <p class="eventos__anio">2022</p>
+                    </div>            
+                    <div class="eventos__circle row justify-content-center align-items-center">
+                        <hr class="eventos__liena1 col">   
+                        <div class="col-auto">               
+                            <a href="https://www.ticketek.com.ar/" target="_blank">
+                                <img class="rounded-circle" src="../img/circulo.png" alt="">
+                            </a>
+                        </div>  
+                        <hr class="eventos__linea2 col">
+                    </div>
+                    <div class="eventos__horario d-flex flex-column align-items-center">
+                        <p>Luna Park</p>
+                        <p class="text-center">C.A.B.A., Buenos Aires</p>
+                        <p>22:30 HS.<p>
+                    </div>
                 </div>
-                <div class="eventos__horario">
-                    <p>Anfiteatro</p>
-                    <p>Martinez, Buenos Aires</p>
-                    <p>20:00 HS.<p>
+                <div class="eventos__todos col-md-3">
+                    <div class="eventos__fechas d-flex flex-column align-items-center">
+                        <h2 class="eventos__dia">16</h2>
+                        <h4 class="eventos__mes">DIC</h4>
+                        <p class="eventos__anio">2022</p>
+                    </div>            
+                    <div class="eventos__circle row justify-content-center align-items-center">
+                        <hr class="eventos__liena1 col">                    
+                        <div class="col-auto">               
+                            <a href="https://www.ticketek.com.ar/"  target="_blank">
+                                <img class="rounded-circle" src="../img/circulo.png" alt="">
+                            </a>
+                        </div> 
+                        <hr class="eventos__linea2 col">                   
+                    </div>
+                    <div class="eventos__horario d-flex flex-column align-items-center">
+                        <p>Anfiteatro</p>
+                        <p class="text-center">Martinez, Buenos Aires</p>
+                        <p>20:00 HS.<p>
+                    </div>
                 </div>
-            </div>
-            <div class="eventos__todos">
-                <div class="eventos__fechas">
-                    <h2 class="eventos__dia">07</h2>
-                    <h4 class="eventos__mes">FEB</h4>
-                    <p class="eventos__anio">2023</p>
-                </div>            
-                <div class="eventos__circle">
-                    <hr class="eventos__liena1">                    
-                    <a href="https://www.ticketek.com.ar/"><img src="../img/circulo.png" alt=""></a>
-                    <hr class="eventos__linea2">
+                <div class="eventos__todos col-md-3">
+                    <div class="eventos__fechas d-flex flex-column align-items-center">
+                        <h2 class="eventos__dia">07</h2>
+                        <h4 class="eventos__mes">FEB</h4>
+                        <p class="eventos__anio">2023</p>
+                    </div>            
+                    <div class="eventos__circle row justify-content-center align-items-center">
+                        <hr class="eventos__liena1 col">                    
+                        <div class="col-auto">               
+                            <a href="https://www.ticketek.com.ar/" target="_blank">
+                                <img class="rounded-circle" src="../img/circulo.png" alt="">
+                            </a>
+                        </div> 
+                        <hr class="eventos__linea2 col">
+                    </div>
+                    <div class="eventos__horario d-flex flex-column align-items-center">
+                        <p>Movistar Arena</p>
+                        <p class="text-center">C.A.B.A., Buenos Aires</p>
+                        <p>23:00 HS.<p>
+                    </div>
                 </div>
-                <div class="eventos__horario">
-                    <p>Movistar Arena</p>
-                    <p>C.A.B.A., Buenos Aires</p>
-                    <p>23:00 HS.<p>
+                <div class="eventos__todos col-md-3">
+                    <div class="eventos__fechas d-flex flex-column align-items-center">
+                        <h2 class="eventos__dia">04</h2>
+                        <h4 class="eventos__mes">ABR</h4>
+                        <p class="eventos__anio">2023</p>
+                    </div>            
+                    <div class="eventos__circle row justify-content-center align-items-center">
+                        <hr class="eventos__liena1 col">                    
+                        <div class="col-auto">               
+                            <a href="https://www.ticketek.com.ar/" target="_blank">
+                                <img class="rounded-circle" src="../img/circulo.png" alt="">
+                            </a>
+                        </div> 
+                        <hr class="eventos__linea2 col">
+                    </div>
+                    <div class="eventos__horario d-flex flex-column align-items-center">
+                        <p>Luna Park</p>
+                        <p class="text-center">C.A.B.A., Buenos Aires</p>
+                        <p>22:30 HS.<p>
+                    </div>
                 </div>
-            </div>
-            <div class="eventos__todos">
-                <div class="eventos__fechas">
-                    <h2 class="eventos__dia">04</h2>
-                    <h4 class="eventos__mes">ABR</h4>
-                    <p class="eventos__anio">2023</p>
-                </div>            
-                <div class="eventos__circle">
-                    <hr class="eventos__liena1">                    
-                    <a href="https://www.ticketek.com.ar/"><img src="../img/circulo.png" alt=""></a>
-                    <hr class="eventos__linea2">
-                </div>
-                <div class="eventos__horario">
-                    <p>Luna Park</p>
-                    <p>C.A.B.A., Buenos Aires</p>
-                    <p>22:30 HS.<p>
-                </div>
-            </div>
-        </section>        
+            </article>  
+        </section>      
     </main>    
     <footer>
-        <div class="piedepagina">
-            <p>SUSCRIBITE AL NEWSLETTER</p>
-            <input type="email" name="completar email"  placeholder=    "Escribi el mail">
-            <input type="button" name="enviar email" value="ENVIAR">
-        </div>        
-        <div class="piedepagina">
-            <p>SEGUINOS EN LAS REDES</p>
-            <a href="https://www.instagram.com/pablo_aubain_musica/">
-                <img class="piedepagina__redes"src="../img/instagram.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/pablo.aubain">
-                <img src="../img/facebook.png" alt="facebook" class="piedepagina__redes"></a>
-            <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng">
-                <img src="../img/spotify.png" alt="spotify"class="piedepagina__redes"></a>
-            <a  href="https://www.youtube.com/c/PabloAubain">
-                <img src="../img/youtube.png" alt="youtube" class="piedepagina__redes"></a>
-        </div>      
-    </footer>
+        <div class="piedepagina rounded-pill" data-aos="fade-up">
+            <p class="display-6 d-flex justify-content-center text-center">SEGUIME EN LAS REDES</p>    
+            <div class="piedepagina__redes d-flex justify-content-center">            
+                <div class="p-md-3">
+                    <a href="https://www.instagram.com/pablo_aubain_musica/" target="_blank">
+                        <img class="redes"src="../img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="p-md-3">
+                    <a href="https://www.facebook.com/pablo.aubain" target="_blank">
+                        <img class="redes" src="../img/facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="p-md-3">
+                    <a  href="https://open.spotify.com/artist/4ZDCj0h4AwEtBHqABI2wBM?si=NbzOUiGLRt6zrxr5aA1Gng" target="_blank">
+                        <img class="redes" src="../img/spotify.png" alt="spotify">
+                    </a>
+                </div>
+                <div class="p-md-3 ">
+                    <a  href="https://www.youtube.com/c/PabloAubain" target="_blank">
+                        <img class="redes img-fluid" src="../img/youtube.png" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>                
+    </footer>    
     <script>
         AOS.init();
+    </script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 </body>
 </html>
