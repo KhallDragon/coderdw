@@ -1,9 +1,9 @@
 @import "./variables.scss";
 
 .discografia{
-    background-color:#d6d6d7;
+    background-color:$color3;
     &__titulo h3{
-        color:#ffee32;
+        color:$color2;
         }
     &__tapa{
         transition:transform 0.8s;
@@ -12,17 +12,17 @@
             }
         }
     &__nombre{
-        background-color:#333533;
+        background-color:$color4;
         font-size:1.5rem;
         &.discografia__nombre:hover{
-            color:#ffd100;
+            color:$color5;
             }
         }
     &__click{
-        color:#333533;
+        color:$color4;
         &:hover{
-            color:#ffd100;
-            background-color:#202020;
+            color:$color5;
+            background-color:$color1;
             }
         }
 }

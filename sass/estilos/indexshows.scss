@@ -1,10 +1,10 @@
 @import "./variables.scss";
 
 .shows{
-    background-color:#202020;
-    color:#d6d6d7;
+    background-color:$color1;
+    color:$color3;
     &__titulo{
-        color:#ffd100;
+        color:$color5;
        }
     &__dia{
     line-height:3rem;
@@ -16,7 +16,7 @@
     line-height:1rem;
     }
     &__boton{
-    color:#ffd100;
+    color:$color5;
         &:hover{
             color:red;
         }

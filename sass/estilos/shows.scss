@@ -1,13 +1,13 @@
 @import "./variables.scss";
 
 .eventos{
-    background-color:#202020;
+    background-color:$color1;
     padding-inline:5rem;
     &__titulos{
-        color:#d6d6d7;
+        color:$color3;
     }
     &__shows{
-        color:#ffd100;
+        color:$color5;
     }
     &__circle {
         hr{
@@ -21,7 +21,7 @@
             transition:transform 0.5s;
             &:hover{
                 transform:scale(1.2);
-                background-color:#d6d6d7;
+                background-color:$color3;
             }
         }
     

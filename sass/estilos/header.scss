@@ -4,24 +4,24 @@
 
 footer{
     padding-block:5rem;
-    background-color:#d6d6d7;
+    background-color:$color3;
     padding-inline:4rem;
     }
     
     .navbar.navbar-expand-md{
-    background-color:#202020
+    background-color:$color1
     }
     
     .menu__opcion{
-    color:#ffee32;
+    color:$color2;
     margin-inline:2rem;
     transition:transform 0.5s;
     &--active{
-        color:#333533;
-        background-color:#d6d6d7;
+        color:$color4;
+        background-color:$color3;
         }
     &:hover{
-        color:#d6d6d7;
+        color:$color3;
         transform:scale(1.2);
         }
     }

@@ -2,7 +2,7 @@
 
 .videoclip{
     padding-inline:0;
-    background-color:#202020;
+    background-color:$color1;
     &__yt{
         width:100vw;
         height:100vh;
@@ -10,12 +10,12 @@
     }
     
     .tema1{
-    background-color:#202020;
+    background-color:$color1;
     padding-block:2rem;
-    color:#d6d6d7;
+    color:$color3;
     }
     .tema2{
-    background-color:#d6d6d7;
+    background-color:$color3;
     padding-block:2rem;
-    color:#202020;
+    color:$color1;
     }
