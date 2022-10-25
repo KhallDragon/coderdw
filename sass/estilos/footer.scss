@@ -1,3 +1,15 @@
-.redes{
-    max-width: 100px;
-}
+@import "./variables.scss";
+
+.piedepagina{
+    padding-block:3rem;
+    background-color:#333533;
+    color:white;
+    }
+    .redes{
+    max-width:100px;
+    transition:transform 0.5s;
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+    

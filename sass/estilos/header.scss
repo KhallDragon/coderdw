@@ -1,14 +1,27 @@
 @import "./variables.scss";
 
-.menu__opcion{
-    color: $color2;
-    margin-inline: 2rem;
-    &:hover{
-        color: red;
+
+
+footer{
+    padding-block:5rem;
+    background-color:#d6d6d7;
+    padding-inline:4rem;
     }
+    
+    .navbar.navbar-expand-md{
+    background-color:#202020
+    }
+    
+    .menu__opcion{
+    color:#ffee32;
+    margin-inline:2rem;
+    transition:transform 0.5s;
     &--active{
-        background-color: $color3;
-        color: $color1;
-        border-radius: 10rem;
+        color:#333533;
+        background-color:#d6d6d7;
+        }
+    &:hover{
+        color:#d6d6d7;
+        transform:scale(1.2);
+        }
     }
-}

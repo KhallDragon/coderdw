@@ -2,43 +2,16 @@
 
 .principal {
     height: 90vh;
-    display: grid;
-    padding-inline: 4rem;
-    background-color: $color1;
-    grid-template-columns: 9fr 1fr;
-    grid-template-rows: 9fr 1fr;
-    grid-template-areas: "foto redes"
-                        "foto scroll";
-    overflow: hidden;
-    &__portada {    
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        grid-area: foto;
+    background-color: #202020;
+    margin: 0;
+    &__foto {
+        height: 65vh;
     }
-    &__foto{
-        display: inline-block;
-        height: 85%;
-    }
-    &__redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: end;
-        grid-area: redes;
-        &__logo {
-            width: 40px;
-            transition: transform 0.5s;
-            &:hover {
-                transform: scale(1.2);
-            }
+    &__redes__logo {
+        max-width: 50px;
+        transition: transform 0.5s;
+        &:hover {
+            transform: scale(1.2);
         }
-    }
-    &__scroll {
-        display: flex;
-        grid-area: scroll;
-        align-items: end;
-        justify-content: end;
-        color: $color3;
     }
 }

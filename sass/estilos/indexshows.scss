@@ -1,57 +1,26 @@
 @import "./variables.scss";
 
 .shows{
-    padding-inline: 4rem;
-    background-color: $color1;   
-    overflow: hidden;  
-    &__titulo {
-        padding-top: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h3{
-            color: $color5;
-            font-size: 3rem;
-        }
-        h2{
-            padding-top: 0.8rem;
-            color: $color5;
-        }
+    background-color:#202020;
+    color:#d6d6d7;
+    &__titulo{
+        color:#ffd100;
+       }
+    &__dia{
+    line-height:3rem;
     }
-    &__todo {
-        display: flex;
-        justify-content: space-evenly;
-        color: $color3;
-        padding-top: 3rem;
+    &__mes{
+    line-height:3rem;
     }
-    &__proximos {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "fecha lugar"
-                            "nada ticket";
+    &__anio{
+    line-height:1rem;
     }
-    &__dia {
-        font-size: 5rem;
-    }
-    &__mes {
-        font-size: 2rem;
-    }
-    &__horario {
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-    }
-    &__ticket {
-        color: $color3;
-        grid-area: ticket;
-    }
-    &__boton {
-        text-align: end;
-        color: $color5;
-        &:hover {
-            color: red;
+    &__boton{
+    color:#ffd100;
+        &:hover{
+            color:red;
         }
     }
-
+    
 }
+    
