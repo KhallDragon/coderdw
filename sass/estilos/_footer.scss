@@ -1,10 +1,12 @@
-@import "./variables.scss";
-
 .piedepagina{
     padding-block:3rem;
     background-color:$color4;
     color:white;
+    p{
+        font-family:'Nabla', cursive;
     }
+    }
+    
     .redes{
     max-width:100px;
     transition:transform 0.5s;

@@ -1,11 +1,9 @@
-@import "./variables.scss";
-
 .shows{
     background-color:$color1;
     color:$color3;
     &__titulo{
         color:$color5;
-       }
+    }
     &__dia{
     line-height:3rem;
     }

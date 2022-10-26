@@ -1,5 +1,3 @@
-@import "./variables.scss";
-
 .contacto{
     background-color:$color1;
     margin:0;
@@ -8,9 +6,6 @@
     &__texto{
         height:200px;
         max-height:200px
-        }
-    div span{
-        width:250px;
         }
     div label{
         width:250px;

@@ -1,14 +1,9 @@
-@import "./variables.scss";
-
 @media screen and (max-width: 1024px){
     .menu__opcion{
     margin-inline:0.5rem;
     }
     .discografia__tapa{
     width:25vw;
-    }
-    .contacto div span{
-    width:150px;
     }
     .contacto div label{
     width:150px;
@@ -61,9 +56,6 @@
     }
     .contacto{
     padding-inline:0.5rem !important;
-    }
-    .contacto div span{
-    width:95px;
     }
     .contacto div label{
     width:95px;

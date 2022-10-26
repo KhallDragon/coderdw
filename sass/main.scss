@@ -1,21 +1,23 @@
-@import "./estilos/general.scss";
+@import "./estilos/_variables.scss";
 
-@import "./estilos/header.scss";
+@import "./estilos/_general.scss";
 
-@import "./estilos/principal.scss";
+@import "./estilos/_header.scss";
 
-@import "./estilos/indexdiscografia.scss";
+@import "./estilos/_principal.scss";
 
-@import "./estilos/indexshows.scss";
+@import "./estilos/_indexdiscografia.scss";
 
-@import "./estilos/footer.scss";
+@import "./estilos/_indexshows.scss";
 
-@import "./estilos/shows.scss";
+@import "./estilos/_footer.scss";
 
-@import "./estilos/discografia.scss";
+@import "./estilos/_shows.scss";
 
-@import "./estilos/multimedia.scss";
+@import "./estilos/_discografia.scss";
 
-@import "./estilos/contactame.scss";
+@import "./estilos/_multimedia.scss";
 
-@import "./estilos/responsive.scss";
+@import "./estilos/_contactame.scss";
+
+@import "./estilos/_responsive.scss";
