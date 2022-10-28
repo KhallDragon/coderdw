@@ -1,17 +1,15 @@
 .piedepagina{
-    padding-block:3rem;
+    padding-block: 3rem;
     background-color:$color4;
-    color:white;
     p{
         font-family:'Nabla', cursive;
     }
-    }
+}
     
-    .redes{
-    max-width:100px;
-    transition:transform 0.5s;
-        &:hover{
-            transform:scale(1.1);
-        }
+.redes{
+max-width:100px;
+transition:transform 0.5s;
+    &:hover{
+        transform:scale(1.1);
     }
-    
+} 

@@ -5,17 +5,23 @@
     text-decoration:none}
     
 main{
-    margin:0
+    margin:0;
+    background-color: $color1;
 }
     
 a{
-    text-decoration:none
+    text-decoration:none;
 }
     
 ul{
-    list-style:none
+    list-style:none;
 }
     
 .logo__header{
-    font-family:'Nabla', cursive
+    font-family:'Nabla', cursive;
+}
+
+footer{
+    padding: 5rem 4rem;
+    background-color:$color3;
 }

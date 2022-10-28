@@ -1,14 +1,8 @@
-footer{
-    padding-block:5rem;
-    background-color:$color3;
-    padding-inline:4rem;
-    }
-    
-    .navbar.navbar-expand-md{
+.navbar.navbar-expand-md{
     background-color:$color1
-    }
-    
-    .menu__opcion{
+}
+
+.menu__opcion{
     color:$color2;
     margin-inline:2rem;
     transition:transform 0.5s;
@@ -20,4 +14,4 @@ footer{
         color:$color3;
         transform:scale(1.2);
         }
-    }
+}

@@ -1,19 +1,17 @@
 .videoclip{
     padding-inline:0;
-    background-color:$color1;
     &__yt{
         width:100vw;
         height:100vh;
         }
     }
     
-    .tema1{
-    background-color:$color1;
+.tema1{
     padding-block:2rem;
     color:$color3;
-    }
-    .tema2{
+}
+.tema2{
     background-color:$color3;
     padding-block:2rem;
     color:$color1;
-    }
+}   
