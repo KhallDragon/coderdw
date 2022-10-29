@@ -171,12 +171,12 @@ img.aos-init.aos-animate:hover {
 @media screen and (max-width: 768px) {
   .menu__opcion {
     margin-inline: 0; }
+  .principal__redes {
+    display: none !important; }
   .contacto {
     height: 100vh; } }
 
 @media screen and (max-width: 425px) {
-  .principal__redes {
-    display: none !important; }
   .principal__foto {
     width: 90vw;
     height: auto; }
