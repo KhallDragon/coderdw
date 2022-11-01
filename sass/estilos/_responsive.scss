@@ -31,11 +31,13 @@
     .discografia__tapa{
     width:80vw;
     }
-    .shows__todo{
-    justify-content:center;
-    }
-    .shows__proximos{
-    margin-inline:1rem;
+    .shows{
+        &__todo{
+        justify-content:center;
+        }
+        &__proximos{
+        margin-inline:1rem;
+        }
     }
     footer{
     padding-inline:1rem;
@@ -43,22 +45,24 @@
     .redes{
     width:60px;
     }
-    .eventos__horario{
-    color:$color3;
-    }
-    .eventos__titulos h2{
-    font-size:2rem;
-    }
-    .eventos__titulos h3{
-    font-size:1rem;
+    .eventos{
+        &__horario{
+        color:$color3;
+        }
+        &__titulos h2{
+        font-size:2rem;
+        }
+        &__titulos h3{
+        font-size:1rem;
+        }
     }
     .multimedia{
     padding-inline:1rem;
     }
     .contacto{
     padding-inline:0.5rem !important;
-    }
-    .contacto div label{
-    width:95px;
+        div label{
+        width:95px;
+        }
     }
 }
