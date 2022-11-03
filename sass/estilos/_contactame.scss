@@ -8,5 +8,18 @@
         }
     div label{
         width:250px;
+
+        @include responsive(pc){
+            width:150px;
+        }        
         }
+    @include responsive(tablet){
+        height:100vh;
+    }
+    @include responsive(celu){
+        padding-inline:0.5rem !important;
+            div label{
+            width:95px;
+            }
+    }
 }

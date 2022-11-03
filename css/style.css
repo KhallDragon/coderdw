@@ -21,6 +21,9 @@ ul {
 footer {
   padding: 5rem 4rem;
   background-color: #d6d6d7; }
+  @media screen and (max-width: 425px) {
+    footer {
+      padding-inline: 1rem; } }
 
 .navbar.navbar-expand-md {
   background-color: #202020; }
@@ -29,6 +32,12 @@ footer {
   color: #ffee32;
   margin-inline: 2rem;
   transition: transform 0.5s; }
+  @media screen and (max-width: 1024px) {
+    .menu__opcion {
+      margin-inline: 0.5rem; } }
+  @media screen and (max-width: 768px) {
+    .menu__opcion {
+      margin-inline: 0; } }
   .menu__opcion--active {
     color: #333533;
     background-color: #d6d6d7; }
@@ -41,11 +50,18 @@ footer {
   margin: 0; }
   .principal__foto {
     height: 65vh; }
+    @media screen and (max-width: 425px) {
+      .principal__foto {
+        width: 90vw;
+        height: auto; } }
   .principal__redes__logo {
     max-width: 50px;
     transition: transform 0.5s; }
     .principal__redes__logo:hover {
       transform: scale(1.2); }
+  @media screen and (max-width: 768px) {
+    .principal .principal__redes {
+      display: none !important; } }
 
 .discografia {
   background-color: #d6d6d7; }
@@ -55,6 +71,12 @@ footer {
     transition: transform 0.8s; }
     .discografia__tapa:hover {
       transform: scale(1.1); }
+    @media screen and (max-width: 1024px) {
+      .discografia__tapa {
+        width: 25vw; } }
+    @media screen and (max-width: 425px) {
+      .discografia__tapa {
+        width: 80vw; } }
   .discografia__nombre {
     background-color: #333533;
     font-size: 1.5rem; }
@@ -80,6 +102,11 @@ footer {
     color: #ffd100; }
     .shows__boton:hover {
       color: red; }
+  @media screen and (max-width: 425px) {
+    .shows__todo {
+      justify-content: center; }
+    .shows__proximos {
+      margin-inline: 1rem; } }
 
 .piedepagina {
   padding-block: 3rem;
@@ -92,6 +119,9 @@ footer {
   transition: transform 0.5s; }
   .redes:hover {
     transform: scale(1.1); }
+  @media screen and (max-width: 425px) {
+    .redes {
+      width: 60px; } }
 
 .eventos__titulos {
   color: #d6d6d7; }
@@ -111,6 +141,14 @@ footer {
   .eventos__circle img:hover {
     transform: scale(1.2);
     background-color: #d6d6d7; }
+
+@media screen and (max-width: 425px) {
+  .eventos__horario {
+    color: #d6d6d7; }
+  .eventos__titulos h2 {
+    font-size: 2rem; }
+  .eventos__titulos h3 {
+    font-size: 1rem; } }
 
 .videoclip {
   padding-inline: 0; }
@@ -151,6 +189,9 @@ footer {
   .multimedia__grande {
     grid-column: span 2;
     grid-row: span 2; }
+  @media screen and (max-width: 425px) {
+    .multimedia {
+      padding-inline: 1rem; } }
 
 img.aos-init.aos-animate:hover {
   transform: scale(1.1);
@@ -167,46 +208,14 @@ img.aos-init.aos-animate:hover {
     max-height: 200px; }
   .contacto div label {
     width: 250px; }
-
-@media screen and (max-width: 1024px) {
-  .menu__opcion {
-    margin-inline: 0.5rem; }
-  .discografia__tapa {
-    width: 25vw; }
-  .contacto div label {
-    width: 150px; } }
-
-@media screen and (max-width: 768px) {
-  .menu__opcion {
-    margin-inline: 0; }
-  .principal__redes {
-    display: none !important; }
-  .contacto {
-    height: 100vh; } }
-
-@media screen and (max-width: 425px) {
-  .principal__foto {
-    width: 90vw;
-    height: auto; }
-  .discografia__tapa {
-    width: 80vw; }
-  .shows__todo {
-    justify-content: center; }
-  .shows__proximos {
-    margin-inline: 1rem; }
-  footer {
-    padding-inline: 1rem; }
-  .redes {
-    width: 60px; }
-  .eventos__horario {
-    color: #d6d6d7; }
-  .eventos__titulos h2 {
-    font-size: 2rem; }
-  .eventos__titulos h3 {
-    font-size: 1rem; }
-  .multimedia {
-    padding-inline: 1rem; }
-  .contacto {
-    padding-inline: 0.5rem !important; }
-    .contacto div label {
-      width: 95px; } }
+    @media screen and (max-width: 1024px) {
+      .contacto div label {
+        width: 150px; } }
+  @media screen and (max-width: 768px) {
+    .contacto {
+      height: 100vh; } }
+  @media screen and (max-width: 425px) {
+    .contacto {
+      padding-inline: 0.5rem !important; }
+      .contacto div label {
+        width: 95px; } }

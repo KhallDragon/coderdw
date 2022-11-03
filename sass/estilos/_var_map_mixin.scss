@@ -1,0 +1,18 @@
+$color1: #202020;
+$color2: #ffee32;
+$color3: #d6d6d7;
+$color4: #333533;
+$color5: #ffd100;
+$tipografialogo: 'Nabla', cursive;
+
+$breakpoint: (
+    celu: 425px,
+    tablet: 768px,
+    pc: 1024px
+);
+
+@mixin responsive($dispositivo){
+    @media screen and (max-width: map-get($breakpoint, $dispositivo)){
+        @content;
+    }
+}

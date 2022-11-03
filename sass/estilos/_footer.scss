@@ -7,9 +7,12 @@
 }
     
 .redes{
-max-width:100px;
-transition:transform 0.5s;
-    &:hover{
-        transform:scale(1.1);
-    }
+    max-width:100px;
+    transition:transform 0.5s;
+        &:hover{
+            transform:scale(1.1);
+        }
+    @include responsive (celu){
+        width:60px;
+    }    
 } 

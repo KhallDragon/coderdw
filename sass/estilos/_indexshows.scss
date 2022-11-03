@@ -18,6 +18,14 @@
             color:red;
         }
     }
+    @include responsive(celu){
+        &__todo{
+        justify-content:center;
+        }
+        &__proximos{
+        margin-inline:1rem;
+        }
+    }
     
 }
     

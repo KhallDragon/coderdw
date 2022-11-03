@@ -25,6 +25,9 @@
         grid-row: span 2;
     
     }
+    @include responsive (celu){
+        padding-inline:1rem;
+    }
 }
 img.aos-init.aos-animate:hover {
     transform: scale(1.1);

@@ -4,10 +4,20 @@
         color:$color4;
         }
     &__tapa{
-        transition:transform 0.8s;
+        transition:transform 0.8s;        
+        
         &:hover{
             transform:scale(1.1);
             }
+
+
+        @include responsive(pc){
+            width:25vw;
+        }
+        @include responsive(celu){
+            width:80vw;
+        }
+        
         }
     &__nombre{
         background-color:$color4;

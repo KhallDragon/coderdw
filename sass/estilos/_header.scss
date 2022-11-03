@@ -6,6 +6,13 @@
     color:$color2;
     margin-inline:2rem;
     transition:transform 0.5s;
+
+    @include responsive(pc){
+        margin-inline:0.5rem;
+    }
+    @include responsive(tablet){
+        margin-inline:0;
+    }
     &--active{
         color:$color4;
         background-color:$color3;

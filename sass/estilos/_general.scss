@@ -24,4 +24,7 @@ ul{
 footer{
     padding: 5rem 4rem;
     background-color:$color3;
+    @include responsive (celu){
+        padding-inline:1rem;
+    }
 }

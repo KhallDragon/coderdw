@@ -19,7 +19,17 @@
                 transform:scale(1.2);
                 background-color:$color3;
             }
+        }    
+    }
+    @include responsive(celu){
+        &__horario{
+            color:$color3;
         }
-    
+        &__titulos h2{
+            font-size:2rem;
+        }
+        &__titulos h3{
+            font-size:1rem;
+        }
     }
 }
