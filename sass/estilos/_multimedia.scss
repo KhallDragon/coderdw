@@ -10,6 +10,9 @@
         width: 100%;
         object-fit: cover;
         transition: transform 0.5s;
+        -webkit-filter: grayscale(1); /* Webkit */
+        filter: gray; /* IE6-9 */
+        filter: grayscale(1);
     }
     &__horizontal{
         grid-column: span 2;
@@ -25,4 +28,7 @@
 }
 img.aos-init.aos-animate:hover {
     transform: scale(1.1);
+    -webkit-filter: none; 
+    filter: none; 
+    filter: none;
 }

@@ -16,7 +16,7 @@ ul {
   list-style: none; }
 
 .logo__header {
-  font-family: 'Nabla', cursive; }
+  font-family: "Nabla", cursive; }
 
 footer {
   padding: 5rem 4rem;
@@ -50,7 +50,7 @@ footer {
 .discografia {
   background-color: #d6d6d7; }
   .discografia__titulo h3 {
-    color: #ffee32; }
+    color: #333533; }
   .discografia__tapa {
     transition: transform 0.8s; }
     .discografia__tapa:hover {
@@ -85,7 +85,7 @@ footer {
   padding-block: 3rem;
   background-color: #333533; }
   .piedepagina p {
-    font-family: 'Nabla', cursive; }
+    font-family: "Nabla", cursive; }
 
 .redes {
   max-width: 100px;
@@ -138,7 +138,12 @@ footer {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.5s; }
+    transition: transform 0.5s;
+    -webkit-filter: grayscale(1);
+    /* Webkit */
+    filter: gray;
+    /* IE6-9 */
+    filter: grayscale(1); }
   .multimedia__horizontal {
     grid-column: span 2; }
   .multimedia__vertical {
@@ -148,7 +153,10 @@ footer {
     grid-row: span 2; }
 
 img.aos-init.aos-animate:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  -webkit-filter: none;
+  filter: none;
+  filter: none; }
 
 .contacto {
   margin: 0;
