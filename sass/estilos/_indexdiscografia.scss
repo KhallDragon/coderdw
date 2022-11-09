@@ -3,15 +3,13 @@
     &__titulo h3{
         color:$color4;
         }
-    &__tapa{
+    &__tapa{        
         transition:transform 0.8s;        
         
         &:hover{
             transform:scale(1.1);
             }
-
-
-        @include responsive(pc){
+        @include responsive (pc){
             width:25vw;
         }
         @include responsive(celu){

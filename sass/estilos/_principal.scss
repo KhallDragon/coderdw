@@ -4,7 +4,7 @@
     &__foto {
         height: 65vh;
         @include responsive (celu){
-            width:90vw;
+            width:85vw;
             height:auto;
         }
     }

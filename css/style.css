@@ -52,7 +52,7 @@ footer {
     height: 65vh; }
     @media screen and (max-width: 425px) {
       .principal__foto {
-        width: 90vw;
+        width: 85vw;
         height: auto; } }
   .principal__redes__logo {
     max-width: 50px;
