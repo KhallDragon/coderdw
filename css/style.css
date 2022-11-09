@@ -78,6 +78,7 @@ footer {
       .discografia__tapa {
         width: 80vw; } }
   .discografia__nombre {
+    width: 15rem;
     background-color: #333533;
     font-size: 1.5rem; }
     .discografia__nombre.discografia__nombre:hover {
